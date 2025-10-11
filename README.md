@@ -92,8 +92,8 @@ Optimized for different information needs:
 ### **Polished Mobile Experience**
 Native iOS app built with Capacitor:
 - **Home**: On-demand podcast generation and mode selection
-- **Library**: View and save source articles from podcasts
-- **Backstage**: Browse and replay saved episodes (Pro/Max only)
+- **Library**: See articles used and access full source content
+- **Backstage**: View and replay all saved episodes (Pro/Max only)
 - **Settings**: Deep personalization controls and subscription options
 
 ---

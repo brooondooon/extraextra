@@ -81,14 +81,14 @@ You select which publishers to follow. The AI curates from your choices only.
 - Start listening when ready
 
 ### Library
-- View all previously generated podcasts
-- Save source articles for later reading
-- Delete old episodes
-
-### Backstage (Pro/Max Only)
-- Browse and replay saved episodes
 - See which articles were used
 - Access full source content
+- Save source articles for later reading
+
+### Backstage (Pro/Max Only)
+- View all previously generated podcasts
+- Browse and replay saved episodes
+- Delete old episodes
 
 ### Settings
 - Choose your voice
