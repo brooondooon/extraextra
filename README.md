@@ -40,10 +40,9 @@ ExtraExtra transforms the way you consume news by synthesizing articles from the
 See ExtraExtra in action:
 
 <div align="center">
-  <a href="YOUR_DEMO_VIDEO_LINK">
-    <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="ExtraExtra Demo" width="600">
-  </a>
-  <p><em>Click to watch the full demo</em></p>
+
+https://github.com/user-attachments/assets/1c2f13f0-83d2-4831-8b8b-161146e67230
+
 </div>
 
 ---
