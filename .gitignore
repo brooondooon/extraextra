@@ -1,0 +1,39 @@
+# ExtraExtra Documentation Repository
+# This repo contains ONLY documentation - no source code
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
+
+# DO NOT COMMIT SOURCE CODE
+# This is a documentation-only repository
+*.ts
+*.tsx
+*.js
+*.jsx
+*.json
+*.lock
+node_modules/
+.next/
+dist/
+build/
+
+# Environment files (should never be in docs repo anyway)
+.env*
+!.env.example
+
+# Prevent accidental commits of private data
+credentials.*
+secrets.*
+private/
