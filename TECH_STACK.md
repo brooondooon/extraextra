@@ -101,11 +101,71 @@
 - Tool calling for NewsAPI integration
 
 **Agent Workflow**
-1. User triggers generation with mode selection
-2. Curation Agent fetches and scores articles
-3. Script Agent creates narrative with reasoning steps
-4. Quality checks ensure source attribution
-5. Voice synthesis completes pipeline
+
+1. **User Input**
+   ```
+   Mode: Deep Dive
+   Publishers: NYT, Bloomberg, TechCrunch
+   Interests: AI regulation, Federal Reserve
+   Topics to Avoid: Celebrity news
+   ```
+
+2. **Curation Agent Output**
+   ```json
+   {
+     "selected_articles": [
+       {
+         "title": "Fed Signals Rate Cut in Q2",
+         "publisher": "Bloomberg",
+         "relevance_score": 0.92,
+         "reasoning": "Matches user interest in Federal Reserve"
+       },
+       {
+         "title": "EU Passes AI Safety Framework",
+         "publisher": "NYT",
+         "relevance_score": 0.88,
+         "reasoning": "Direct match for AI regulation interest"
+       },
+       {
+         "title": "OpenAI Announces Developer Tools",
+         "publisher": "TechCrunch",
+         "relevance_score": 0.75,
+         "reasoning": "Related to AI interest, recent development"
+       }
+     ],
+     "rejected": 12,
+     "diversity_score": 0.84
+   }
+   ```
+
+3. **Script Agent Processing**
+   ```
+   Chain-of-Thought Steps:
+   → Identify narrative arc: Economic policy + Tech regulation theme
+   → Lead with Fed decision (highest relevance, sets context)
+   → Connect to EU regulation (international policy angle)
+   → Close with industry response (OpenAI tools)
+   → Add transitions explaining policy connections
+   ```
+
+4. **Script Agent Output**
+   ```
+   "Today's Deep Dive focuses on policy shifts shaping technology
+   and markets. The Federal Reserve signaled its first rate cut
+   since 2020, with Chair Powell citing stabilized inflation...
+
+   [Transition] This monetary shift comes as regulators worldwide
+   tighten tech oversight. The European Union just passed...
+
+   [Context] For AI companies, these dual pressures—cheaper capital
+   but stricter rules—create interesting dynamics. OpenAI responded
+   this week by..."
+
+   Sources: Bloomberg (Fed coverage), New York Times (EU regulation),
+   TechCrunch (OpenAI announcement)
+   ```
+
+5. **Voice Synthesis** → Audio output with prosody markup
 
 ---
 
@@ -194,14 +254,46 @@
 - Intermediate outputs guide next agent decisions
 
 **Adaptive Behavior**
-- System learns from user skip patterns
-- Adjusts article selection based on completion rates
-- Mode routing (Bread & Butter vs Deep Dive) based on usage
+
+Example: User consistently skips sports content
+```json
+{
+  "user_id": "abc123",
+  "skip_patterns": {
+    "sports": 0.78,
+    "entertainment": 0.45,
+    "technology": 0.12
+  },
+  "completion_rate_by_mode": {
+    "bread_and_butter": 0.85,
+    "deep_dive": 0.92,
+    "hot_topics": 0.58
+  },
+  "adaptive_adjustments": {
+    "reduce_sports_weight": -0.6,
+    "increase_deep_dive_frequency": true,
+    "preferred_length": "10-15min"
+  }
+}
+```
+
+System Response:
+- Curation Agent automatically down-weights sports articles
+- Recommends Deep Dive mode more frequently
+- Adjusts default podcast length to user's sweet spot
 
 **Memory & Context**
 - User preference vectors stored in Supabase
 - Redis caches recent article embeddings
 - Historical data influences future curation
+
+Example: Returning user flow
+```
+User last listened: 3 days ago
+Last topics: Climate policy, Tech earnings
+System retrieves context → Prioritizes follow-up articles
+→ "Continuing from your last session on climate policy..."
+```
 
 ---
 
