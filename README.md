@@ -1,10 +1,12 @@
 <div align="center">
 
+<img src="https://extraextra.live/logo.png" alt="ExtraExtra Logo" width="120">
+
 # ExtraExtra
 
 ### News podcasts generated from sources you trust, on the topics you want to hear.
 
-Transform your morning news routine into a personalized audio experience. ExtraExtra is an iOS app that uses AI to curate, write, and narrate custom news podcasts tailored to your interests—so you can stay informed while commuting, working out, or going about your day.
+Stop reading clickbait and waiting for mid podcast episodes. Start getting good news wherever you go with ExtraExtra, a personalized news podcaster in a mobile app that generates informative, engaging news podcasts on the spot, tailored exactly to your interests.
 
 **[Visit Website](https://extraextra.live)** • **[Download on App Store](#)** • **[View Features](FEATURES.md)**
 
@@ -14,43 +16,41 @@ Transform your morning news routine into a personalized audio experience. ExtraE
 
 ---
 
-## 🎯 The Problem
+## Key Problem
 
-**News consumption is broken.** Most people want to stay informed, but:
+News consumption is broken. Most people want to stay informed, but:
+
 - Reading dozens of articles takes too much time
-- Notification fatigue from news apps
-- Important context gets lost in headlines
-- Multitasking while reading is impossible
+- You only trust news from certain sources
+- News is riddled with clickbait and popups
+- News podcast episodes release on a cadence and can be low-quality
 
-**The insight:** People already listen to podcasts while commuting, exercising, and doing chores. What if your daily news could be a podcast—personalized, on-demand, and narrated naturally?
-
----
-
-## 💡 The Solution
-
-ExtraExtra transforms the way you consume news by turning articles from your trusted publishers into AI-generated podcast episodes. It's not just text-to-speech—it's intelligent curation, narrative synthesis, and professional narration.
-
-**Think of it as having a personal news anchor who reads only what you care about.**
+People already listen to podcasts while commuting, exercising, and doing chores. What if your daily news could be a podcast—personalized, on-demand, and narrated in a tone you enjoy?
 
 ---
 
-## ✨ Key Features
+## The Solution
 
-### 🤖 **AI-Powered Content Pipeline**
-Our AI doesn't just read articles—it understands them:
-- **Intelligent Summarization**: GPT-4 extracts key insights and context
-- **Narrative Construction**: Creates natural, conversational podcast scripts
+ExtraExtra transforms the way you consume news by synthesizing articles from the sources you trust, providing intelligent curation, detailed analysis, and professional narration. Think of it as your personal news anchor, who's constantly digging for the best news for you.
+
+---
+
+## Key Features
+
+### **AI-Powered Content Pipeline**
+- **Intelligent Summarization**: Agent dives deep into each article and extracts key info
+- **Narrative Construction**: Creates high-quality, conversational podcast scripts
 - **Cross-Article Synthesis**: Connects related stories for deeper understanding
-- **Source Attribution**: Maintains journalistic integrity by citing publishers
+- **Source Attribution**: Maintains journalistic integrity by citing publishers in your Library
 
-### 🎭 **6 Distinct Voice Personalities**
-Premium AI voices from Google's Chirp 3 HD—the same technology used by professional podcasters:
-- **Female**: Doe (authoritative), Ms. Frizzle (energetic), Valley Girl (conversational)
-- **Male**: John (trustworthy), Mr. Ello Gov'na (sophisticated), City Cowboy (down-to-earth)
+### **Distinct Voice Personalities**
+Premium voices from OpenAI's TTS models:
+- **Female**: Doe (Basic), Ms. Frizzle (energetic), Valley Girl (casual)
+- **Male**: John (Basic), Mr. Ello Gov'na (British, sophisticated), City Cowboy (GenZ slang and cowboy sayings)
 
 Each voice has unique prosody, pacing, and personality to match your listening preference.
 
-### 📰 **100+ Premium Publishers**
+### **100+ Premium Publishers**
 Curate from top-tier sources across 7 categories:
 - **World**: NYT, Washington Post, The Guardian, BBC, Reuters, AP
 - **Business**: WSJ, Financial Times, Bloomberg, The Economist, Forbes
@@ -60,44 +60,42 @@ Curate from top-tier sources across 7 categories:
 - **Entertainment**: Variety, Rolling Stone, Billboard
 - **Social**: Reddit, Hacker News, Twitter trends
 
-### 🎯 **Three Listening Modes**
+### **Three Listening Modes**
 Optimized for different information needs:
 
 **Bread & Butter** (Default)
 - Key takeaways from top headlines
-- 5-10 minute episodes
+- Get a high level recap from your personalized interests and sources
 - Perfect for daily catch-up
 
 **Deep Dive**
 - Thoughtful analysis with additional context
-- 10-15 minute episodes  
+- Become an expert quickly on your interests
 - Connects related stories for deeper understanding
 
 **Hot Topics**
 - Trending conversations and viral stories
-- 5-10 minute episodes
-- Great for water cooler conversations
+- Great for catching up to prepare for water cooler conversations
 
-### 📱 **Polished Mobile Experience**
+### **Polished Mobile Experience**
 Native iOS app built with Capacitor:
-- **Home**: On-demand podcast generation with real-time status
-- **Library**: Browse and replay saved episodes
-- **Backstage**: See source articles while listening (Pro/Max only)
-- **Settings**: Deep personalization controls
+- **Home**: On-demand podcast generation and mode selection
+- **Library**: View and save source articles from podcasts
+- **Backstage**: Browse and replay saved episodes (Pro/Max only)
+- **Settings**: Deep personalization controls and subscription options
 
 ---
 
-## 🎵 How It Works
+## How It Works
 
-### **The AI Pipeline** (Technical Overview)
+### **News Podcaster Agent Pipeline**
 
 ```
 News Sources → Content Extraction → AI Processing → Audio Generation → Delivery
 ```
 
 1. **Content Aggregation**
-   - RSS feed monitoring across 100+ publishers
-   - Real-time article fetching with Puppeteer
+   - Real-time article fetching with NewsAPI
    - Content extraction using Mozilla Readability
 
 2. **Intelligent Curation**
@@ -106,38 +104,31 @@ News Sources → Content Extraction → AI Processing → Audio Generation → D
    - Freshness scoring (prioritize recent articles)
    - Diversity balancing across categories
 
-3. **Script Generation** (GPT-4)
-   - Article summarization with context preservation
+3. **Script Generation**
+   - Article synthesis with context preservation
    - Narrative arc construction for podcast flow
    - Transition scripting between topics
    - Source citation integration
 
-4. **Voice Synthesis** (Google Chirp 3 HD)
+4. **Voice Synthesis**
    - SSML markup for natural prosody
    - Emphasis and pacing controls
-   - Professional-quality 44.1kHz audio
-   - < 5 second generation latency per segment
+   - Professional-quality 44.1kHz mp3 audio
 
 5. **Audio Assembly**
    - Segment stitching with smooth transitions
-   - Optional intro/outro music
-   - Normalization and mastering
-   - Adaptive bitrate encoding
-
-**Result:** Studio-quality podcast in 15-30 seconds.
+   - Native playback with iOS
+   - Segmented duration bar for easy audio searching
 
 ---
 
-## 💎 Subscription Tiers
+## Subscription Tiers
 
 | Feature | Free | Pro | Max |
 |---------|------|-----|-----|
-| **Podcast Duration** | 5 minutes | 10 minutes | 20 minutes |
-| **Monthly Listening** | 30 minutes | 100 minutes | 250 minutes |
-| **Voice Personalities** | 3 basic voices | All 6 voices | All 6 voices |
-| **Listening Modes** | Bread & Butter | All 3 modes | All 3 modes |
+| **Podcast Duration Max** | 5 minutes | 10 minutes | 20 minutes |
+| **Monthly Listening Limit** | 30 minutes | 100 minutes | 250 minutes |
 | **Backstage Access** | ❌ | ✅ | ✅ |
-| **Publisher Access** | Standard (50+) | Premium (100+) | Premium (100+) |
 | **Priority Queue** | ❌ | ❌ | ✅ (< 10s) |
 | **Price** | **Free** | **$9.99/mo** | **$19.99/mo** |
 
@@ -145,76 +136,34 @@ News Sources → Content Extraction → AI Processing → Audio Generation → D
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
-**Why this stack?** Each technology choice solves a specific product challenge:
+**Frontend & Mobile**
+- Next.js 15
+- React 18
+- TypeScript 5.0
+- TailwindCSS
+- Capacitor (iOS native)
 
-### **Frontend: Next.js 15 + React 18**
-- **Why**: Server components for fast initial loads, client components for interactivity
-- **Benefit**: Sub-second page loads even on slow networks
+**Backend & Database**
+- Supabase (PostgreSQL, Auth, Realtime)
+- Upstash Redis (Edge caching)
 
-### **Mobile: Capacitor**
-- **Why**: Single codebase for iOS (Android coming), native plugin access
-- **Benefit**: RevenueCat integration, push notifications, native audio controls
+**AI & Audio**
+- OpenAI GPT-4 (Script generation)
+- Anthropic Claude 3.5 (Content analysis)
+- OpenAI TTS (Voice synthesis)
 
-### **Backend: Supabase**
-- **Why**: Real-time subscriptions, built-in auth, PostgreSQL with row-level security
-- **Benefit**: Instant subscription status updates, secure multi-user support
-
-### **Caching: Upstash Redis**
-- **Why**: Edge caching for article content, session state management
-- **Benefit**: 90% cache hit rate = faster generation, lower API costs
-
-### **AI: Multi-Model Approach**
-- **GPT-4**: Script generation (reasoning, creativity)
-- **Claude 3.5**: Content analysis (safety, categorization)
-- **Chirp 3 HD**: Voice synthesis (naturalness, quality)
-- **Why**: Best-in-class for each task rather than one-size-fits-all
-
-### **Payments: RevenueCat**
-- **Why**: Cross-platform subscription management, receipt validation, analytics
-- **Benefit**: Handles App Store complexity, prevents subscription fraud
+**Infrastructure**
+- Vercel (Hosting)
+- NewsAPI (Content aggregation)
+- RevenueCat (Subscription management)
 
 [View Full Architecture →](TECH_STACK.md)
 
 ---
 
-## 📸 Screenshots
-
-<div align="center">
-
-| Home - Generate | Library - History | Backstage - Sources |
-|----------------|-------------------|---------------------|
-| ![Home](assets/screenshots/home.png) | ![Library](assets/screenshots/library.png) | ![Backstage](assets/screenshots/backstage.png) |
-
-| Settings - Publishers | Settings - Voice | Subscription Plans |
-|----------------------|------------------|-------------------|
-| ![Publishers](assets/screenshots/publishers.png) | ![Voice](assets/screenshots/voice.png) | ![Subscription](assets/screenshots/subscription.png) |
-
-</div>
-
----
-
-## 🎯 Product Thinking
-
-### **Core Insight: Audio-First News**
-While others focus on push notifications and algorithmic feeds, ExtraExtra recognizes that audio is the most natural format for busy professionals. Podcasts have 50%+ completion rates vs. 2-3% for articles.
-
-### **Personalization Without Echo Chambers**
-Users select publishers (not topics), ensuring exposure to diverse viewpoints from trusted sources. The AI curates but doesn't editorialize.
-
-### **Monetization: Align Incentives**
-Free tier creates value awareness. Pro/Max tiers unlock time-saving features, not paywalls. Users pay for convenience, not access to news.
-
-### **Technical Moats**
-1. **Multi-Publisher Scraping**: Maintaining 100+ scrapers is operationally complex
-2. **Script Quality**: GPT-4 fine-tuning for podcast-specific narrative structure  
-3. **Voice Licensing**: Enterprise Chirp 3 access with SSML control
-4. **Caching Intelligence**: 90% hit rate requires deep usage pattern understanding
-
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### **Download the App**
 
@@ -225,48 +174,23 @@ Free tier creates value awareness. Pro/Max tiers unlock time-saving features, no
 ### **Quick Start**
 
 1. **Sign Up** (30 seconds)
-   - Email/password or social login (Google, Apple, LinkedIn, Spotify)
-   
-2. **Choose Publishers** (1 minute)
+   - Email/password or social login (Google, Apple, Spotify)
+
+2. **Choose Publishers and Topics**
    - Select 5-10 sources across categories
    - Set interests and topics to avoid
 
-3. **Pick Your Voice** (30 seconds)
+3. **Pick Your Voice**
    - Listen to 6 samples
    - Choose the one that fits your style
 
-4. **Generate First Podcast** (15 seconds)
-   - Tap "Create Podcast"
-   - AI generates 5-minute episode
-   - Start listening instantly
-
-**Total time to first listen: < 3 minutes**
+4. **Generate First Podcast**
+   - Hit "Create Podcast"
+   - Start listening when the push notification comes in!
 
 ---
 
-## 💬 User Stories
-
-### **Morning Commuter** (Sarah, 32, Marketing Manager)
-> "I have a 15-minute drive to work. ExtraExtra's Deep Dive mode gives me thoughtful WSJ and NYT analysis without staring at my phone. I actually feel informed now, not just headline-aware."
-
-**Before ExtraExtra**: Skimmed headlines on social media, felt uninformed  
-**After ExtraExtra**: 10-minute podcast = 5-6 well-explained stories  
-
-### **Gym Regular** (Marcus, 28, Software Engineer)
-> "Perfect for the gym. 20-minute Max episodes keep me up-to-date on tech and world news while I work out. The 'Hot Topics' mode helps me not sound clueless in team standups."
-
-**Before ExtraExtra**: Listened to music, missed industry news  
-**After ExtraExtra**: Stays current on tech without doom-scrolling Twitter
-
-### **International Traveler** (Priya, 41, Management Consultant)
-> "When I'm traveling for work, I don't have time to read multiple news apps. ExtraExtra combines The Guardian, Bloomberg, and Politico into one 15-minute briefing. Efficiency matters."
-
-**Before ExtraExtra**: Overwhelmed by multiple news apps and email newsletters  
-**After ExtraExtra**: Single source for curated news from trusted publishers
-
----
-
-## 🔐 Privacy & Data Ethics
+## Privacy & Data
 
 ### **What We Collect**
 - Email address (authentication)
@@ -274,93 +198,43 @@ Free tier creates value awareness. Pro/Max tiers unlock time-saving features, no
 - Usage analytics (improvement)
 - Subscription status (billing)
 
-### **What We DON'T Collect**
-- ❌ No third-party tracking pixels
-- ❌ No selling user data
-- ❌ No reading your podcast transcripts
-- ❌ No sharing with advertisers
-
-### **Data Philosophy**
-1. **Minimal Collection**: Only what's needed for the product to work
-2. **User Control**: Export data, delete account anytime
-3. **Transparent Use**: Privacy policy in plain English
-4. **Secure Storage**: Supabase with row-level security, encrypted at rest
-
 [Read Full Privacy Policy →](PRIVACY.md)
 
 ---
 
-## 📱 Platform Roadmap
+## Platform Roadmap
 
 - ✅ **iOS** (Live) - Native app with full feature set
-- 🚧 **Android** (Q2 2025) - Google Play release
-- 🚧 **Web Player** (Q3 2025) - Listen on desktop
-- 🚧 **CarPlay** (Q3 2025) - In-car integration
-- 🚧 **Offline Mode** (Q4 2025) - Download for flights
+- **Android** (Q4 2025) - Google Play release
+- **Web Player** (Q4 2025) - Listen on desktop
 
 ---
 
-## 🗺️ Feature Roadmap
+## Support & Feedback
 
-**Near-Term** (Next 3 months)
-- [ ] Podcast sharing (share episodes with friends)
-- [ ] Speed controls (1.25x, 1.5x, 2x playback)
-- [ ] Sleep timer (auto-stop after X minutes)
-- [ ] Custom playlists (save favorite episodes)
-
-**Mid-Term** (3-6 months)
-- [ ] Offline downloads (listen without internet)
-- [ ] Multi-language support (Spanish, French, German)
-- [ ] Integration with Apple Podcasts, Spotify
-- [ ] Web app (listen on desktop)
-
-**Long-Term** (6-12 months)
-- [ ] Android app
-- [ ] API for third-party integrations
-- [ ] B2B team accounts (companies, universities)
-- [ ] Custom voice cloning (your own voice)
-
----
-
-## 📊 Metrics That Matter
-
-**Product North Star**: Daily Active Listeners  
-**Why**: Measures habit formation, not just downloads
-
-**Key Metrics**
-- **Completion Rate**: 65% (vs. 2-3% for articles)
-- **7-Day Retention**: 42% (industry standard: 20%)
-- **Avg. Session Length**: 8.5 minutes
-- **NPS Score**: 72 (Promoters - Detractors)
-
----
-
-## 📞 Support & Feedback
-
-**We're here to help:**
-- **Website**: [extraextra.live](https://extraextra.live)
+We're here to help:
+- **Website**: extraextra.live
 - **Email**: brandonqin@berkeley.edu
 - **App Issues**: Use the App Store "Report a Problem" feature
-- **Feature Requests**: We read every email
+- **Feature Requests**: We read every email!
 
 ---
 
-## 👨‍💻 About the Creator
+## About the Creator
 
-**Brandon Qin** - Product Engineer  
-UC Berkeley • Previously: [Your Background]
+**Brandon Qin** - Product Manager
 
-**Why I Built This**: I was spending 90 minutes/day reading news and still felt uninformed. ExtraExtra was born from my own frustration—I wanted the depth of long-form journalism in the convenience of audio.
+**Why I Built This**: I hated reading news with all the clickbait, popups, and blockers. Started hating waiting for my favorite news podcast just for a mid episode drop. So i built an app so I could listen to news podcasts on what I wanted to hear, whenever. Hope you love it as much as I do for your commutes and coffee breaks!
 
 **Connect**
-- **Website**: [extraextra.live](https://extraextra.live)
-- **GitHub**: [@brooondooon](https://github.com/brooondooon)
-- **LinkedIn**: [Your LinkedIn]
-- **Twitter/X**: [Your Twitter]
+- **Website**: extraextra.live
+- **GitHub**: @brooondooon
+- **LinkedIn**: linkedin.com/brandonqin
+- **Twitter/X**: x.com/extraextralive
 
 ---
 
-## 📄 Legal
+## Legal
 
 **Source Code**: Proprietary. This repository contains documentation only.
 
@@ -374,13 +248,13 @@ UC Berkeley • Previously: [Your Background]
 
 ---
 
-## ⭐ Show Your Support
+## Show Your Support
 
-**If ExtraExtra helps you stay informed:**
-- ⭐ Star this repository
-- 📝 Leave an App Store review
-- 🐦 Share on social media
-- 📧 Tell a friend who's always "too busy to read"
+If ExtraExtra helps you stay informed:
+- Star this repository
+- Leave an App Store review
+- Share on social media
+- Tell a friend who's always "too busy to read"
 
 ---
 
@@ -390,11 +264,11 @@ UC Berkeley • Previously: [Your Background]
 
 *News podcasts from sources you trust, on the topics you want to hear.*
 
-**[extraextra.live](https://extraextra.live)** • **[Download Now](#)** • **[Features](FEATURES.md)** • **[Tech Stack](TECH_STACK.md)**
+[extraextra.live](https://extraextra.live) • [Download Now](#) • [Features](FEATURES.md) • [Tech Stack](TECH_STACK.md)
 
 ---
 
-**Documentation Last Updated**: January 2025  
+**Documentation Last Updated**: January 2025
 **Current Version**: 1.0 (iOS)
 
 </div>
