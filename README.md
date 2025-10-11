@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://extraextra.live/logo.png" alt="ExtraExtra Logo" width="120">
+<img src="logo.png" alt="ExtraExtra Logo" width="120">
 
 # ExtraExtra
 
@@ -32,6 +32,19 @@ People already listen to podcasts while commuting, exercising, and doing chores.
 ## The Solution
 
 ExtraExtra transforms the way you consume news by synthesizing articles from the sources you trust, providing intelligent curation, detailed analysis, and professional narration. Think of it as your personal news anchor, who's constantly digging for the best news for you.
+
+---
+
+## Demo Video
+
+See ExtraExtra in action:
+
+<div align="center">
+  <a href="YOUR_DEMO_VIDEO_LINK">
+    <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="ExtraExtra Demo" width="600">
+  </a>
+  <p><em>Click to watch the full demo</em></p>
+</div>
 
 ---
 
