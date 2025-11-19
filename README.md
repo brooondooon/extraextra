@@ -8,7 +8,7 @@
 
 Stop reading clickbait and waiting for mid podcast episodes. Start getting good news wherever you go with ExtraExtra, a personalized news podcaster in a mobile app that generates informative, engaging news podcasts on the spot, tailored exactly to your interests.
 
-**[Visit Website](https://extraextra.live)** • **[[Download on App Store]](⁦https://apps.apple.com/us/app/extraextra-news/id6749835220⁩)** • **[View Features](FEATURES.md)**
+**[Visit Website](https://extraextra.live)** • **[Download on App Store](⁦https://apps.apple.com/us/app/extraextra-news/id6749835220⁩)** • **[View Features](FEATURES.md)**
 
 ![iOS](https://img.shields.io/badge/iOS-14%2B-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue) ![Next.js](https://img.shields.io/badge/Next.js-15-black) ![License](https://img.shields.io/badge/License-Proprietary-red)
 
